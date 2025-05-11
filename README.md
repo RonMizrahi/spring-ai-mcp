@@ -80,21 +80,7 @@ Once the application is running, you can access it at `http://localhost:8090`.
 
 To use the `McpServerController`, send a POST request to the `/mcp` endpoint with a JSON body containing the user input. Below is an example:
 
-#### Request
-```http
-POST /mcp HTTP/1.1
-Host: localhost:8090
-Content-Type: application/json
-
-"What is the weather today?"
-```
-
-#### Response
-```json
-{
-  "content": "<CUSTOM SEARCH RESULT>"
-}
-```
+![alt text](image-1.png)
 
 Replace the input string with your query to get a response from the AI-powered chat system.
 
