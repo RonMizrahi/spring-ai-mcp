@@ -1,0 +1,31 @@
+spring:
+  ai:
+    mcp:
+      client:
+        enabled: true
+        name: mcp_client_playground
+        version: 1.0.0
+        type: SYNC
+        request-timeout: 20s
+        stdio:
+          enabled: true
+          servers-configuration: classpath:mcp-servers-config.json
+        toolcallback:
+          enabled: true
+#        sse:
+#          connections:
+#            custom-search-tools-server:
+#              url: http://localhost:8090
+#    ollama:
+#      chat:
+#        options:
+#          model: llama3.2
+    openai:
+      chat:
+        options:
+          model: gpt-4o-mini
+          temperature: 0.7
+      api-key: <API_KEY>
+logging:
+  level:
+    root: INFO

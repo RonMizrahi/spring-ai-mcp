@@ -1,0 +1,28 @@
+# Using spring-ai-starter-mcp-server-webmvc
+spring:
+  application:
+    name: custom-search-tools-server
+  main:
+    banner-mode: off
+  ai:
+    mcp:
+      server:
+        name: custom-search-tools-server
+        version: 0.0.1
+        type: SYNC
+        stdio: true
+        sse-message-endpoint: /mcp/message
+        resource-change-notification: true
+        tool-change-notification: true
+        prompt-change-notification: true
+
+google:
+  api:
+    key: <GOOGLE_API_KEY> #https://console.cloud.google.com/apis
+  custom:
+    search:
+      engine:
+        id: <GOGOLE_ENGINE_ID> #https://cse.google.com/
+
+server:
+  port: 8090
